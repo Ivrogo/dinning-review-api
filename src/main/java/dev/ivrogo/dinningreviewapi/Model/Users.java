@@ -25,10 +25,10 @@ public class Users {
     @Column(name = "ZIPCODE")
     private String zipCode;
     @Column(name = "PEANUT_ALLERGIES")
-    private boolean peanutAllergiesInterest;
+    private boolean peanutAllergies;
     @Column(name = "EGG_ALLERGIES")
-    private boolean eggAllergiesInterest;
+    private boolean eggAllergies;
     @Column(name = "DAIRY_ALLERGIES")
-    private boolean dairyAllergiesInterest;
+    private boolean dairyAllergies;
 
 }
