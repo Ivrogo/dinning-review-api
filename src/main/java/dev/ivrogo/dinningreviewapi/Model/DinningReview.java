@@ -30,5 +30,8 @@ public class DinningReview {
     private Integer dairy_score;
     @Column(name = "COMMENTARY", nullable = true)
     private String commentary;
+    @Column(name = "REVIEW_STAUTS")
+    @Enumerated(EnumType.STRING)
+    private ReviewStatus reviewStatus;
 
 }
