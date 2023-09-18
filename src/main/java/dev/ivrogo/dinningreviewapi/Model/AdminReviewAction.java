@@ -13,6 +13,6 @@ import lombok.Setter;
 @Setter
 public class AdminReviewAction {
 
-    private boolean reviewAccepted;
+    private Boolean reviewAccepted;
 
 }

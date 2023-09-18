@@ -9,9 +9,9 @@ public class RegisterUserReviewDTO {
 
     private String reviewer;
     private Long restaurantId;
-    private String peanutScore;
-    private String eggScore;
-    private String dairyScore;
+    private Integer peanutScore;
+    private Integer eggScore;
+    private Integer dairyScore;
     private String commentary;
 
 }
