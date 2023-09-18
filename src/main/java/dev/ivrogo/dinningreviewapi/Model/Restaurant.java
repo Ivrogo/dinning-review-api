@@ -20,14 +20,16 @@ public class Restaurant {
     private String name;
     @Column(name = "ADDRESS")
     private String address;
+    @Column(name = "ZIPCODE")
+    private String zipCode;
     @Column(name = "PHONE")
     private String phone;
-    @Column(name = "REVIEW_SCORES")
-    private Integer avg_review_scores;
-    @Column(name = "PEANUT_SCORES")
-    private Integer avg_peanut_scores;
-    @Column(name = "EGG_SCORES")
-    private Integer avg_egg_scores;
-    @Column(name = "DAIRY_SCORES")
-    private Integer avg_dairy_scores;
+    @Column(name = "REVIEW_SCORE")
+    private Integer reviewScore;
+    @Column(name = "PEANUT_SCORE")
+    private Integer peanutScore;
+    @Column(name = "EGG_SCORE")
+    private Integer eggScore;
+    @Column(name = "DAIRY_SCORE")
+    private Integer  dairyScore;
 }
