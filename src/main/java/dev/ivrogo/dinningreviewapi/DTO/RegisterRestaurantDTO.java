@@ -15,5 +15,9 @@ public class RegisterRestaurantDTO {
     private String address;
     private String zipCode;
     private String phone;
+    private String reviewScore;
+    private String peanutScore;
+    private String eggScore;
+    private String dairyScore;
 
 }

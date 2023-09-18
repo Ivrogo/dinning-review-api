@@ -6,7 +6,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class UserUpdateDTO {
-    
+
+    private String name;
     private String city;
     private String state;
     private String email;

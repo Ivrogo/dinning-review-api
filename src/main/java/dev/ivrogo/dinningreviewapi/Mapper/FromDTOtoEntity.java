@@ -2,7 +2,9 @@ package dev.ivrogo.dinningreviewapi.Mapper;
 
 import dev.ivrogo.dinningreviewapi.DTO.RegisterRestaurantDTO;
 import dev.ivrogo.dinningreviewapi.DTO.RegisterUserDTO;
+import dev.ivrogo.dinningreviewapi.DTO.RegisterUserReviewDTO;
 import dev.ivrogo.dinningreviewapi.DTO.UserUpdateDTO;
+import dev.ivrogo.dinningreviewapi.Model.DinningReview;
 import dev.ivrogo.dinningreviewapi.Model.Restaurant;
 import dev.ivrogo.dinningreviewapi.Model.Users;
 
@@ -15,6 +17,10 @@ public class FromDTOtoEntity {
         restaurant.setAddress(registerRestaurantDTO.getAddress());
         restaurant.setZipCode(registerRestaurantDTO.getZipCode());
         restaurant.setPhone(registerRestaurantDTO.getPhone());
+        restaurant.setReviewScore(registerRestaurantDTO.getReviewScore());
+        restaurant.setPeanutScore(registerRestaurantDTO.getPeanutScore());
+        restaurant.setEggScore(registerRestaurantDTO.getEggScore());
+        restaurant.setDairyScore(registerRestaurantDTO.getDairyScore());
 
         return restaurant;
     }
@@ -33,6 +39,20 @@ public class FromDTOtoEntity {
 
         return users;
     }
+
+    public static DinningReview fromDTOToEntity(RegisterUserReviewDTO registerUserReviewDTO) {
+
+        DinningReview dinningReview = new DinningReview();
+        dinningReview.setReviewer(registerUserReviewDTO.getReviewer());
+        dinningReview.setRestaurantId(registerUserReviewDTO.getRestaurantId());
+        dinningReview.setPeanutScore(registerUserReviewDTO.getPeanutScore());
+        dinningReview.setEggScore(registerUserReviewDTO.getEggScore());
+        dinningReview.setDairyScore(registerUserReviewDTO.getDairyScore());
+        dinningReview.setCommentary(registerUserReviewDTO.getCommentary());
+
+        return dinningReview;
+    }
+
 
     public static void UpdateUserFromDTO(Users user, UserUpdateDTO userUpdateDTO) {
 

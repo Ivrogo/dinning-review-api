@@ -25,11 +25,11 @@ public class Restaurant {
     @Column(name = "PHONE")
     private String phone;
     @Column(name = "REVIEW_SCORE")
-    private Integer reviewScore;
+    private String reviewScore;
     @Column(name = "PEANUT_SCORE")
-    private Integer peanutScore;
+    private String peanutScore;
     @Column(name = "EGG_SCORE")
-    private Integer eggScore;
+    private String eggScore;
     @Column(name = "DAIRY_SCORE")
-    private Integer  dairyScore;
+    private String  dairyScore;
 }

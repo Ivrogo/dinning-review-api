@@ -21,13 +21,13 @@ public class DinningReview {
     @Column(name = "REVIEWER", unique = true)
     private String reviewer;
     @Column(name = "RESTAURANT_ID", unique = true)
-    private long restaurantId;
+    private Long restaurantId;
     @Column(name = "PEANUT_SCORE", nullable = true)
-    private Integer peanut_score;
+    private String peanutScore;
     @Column(name = "EGG_SCORE", nullable = true)
-    private Integer egg_score;
+    private String eggScore;
     @Column(name = "DAIRY_SCORE", nullable = true)
-    private Integer dairy_score;
+    private String dairyScore;
     @Column(name = "COMMENTARY", nullable = true)
     private String commentary;
     @Column(name = "REVIEW_STAUTS")

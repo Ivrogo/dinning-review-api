@@ -52,10 +52,10 @@ public class UserServiceImpl implements UserService{
     public ResponseEntity<ResponseDTO> updateUser(UserUpdateDTO userUpdateDTO) {
         ResponseDTO response = new ResponseDTO();
         try {
-            if( userUpdateDTO.getName().isEmpty() || userUpdateDTO.getEmail().isEmpty() || userUpdateDTO.getCity().isEmpty() || userUpdateDTO.getState().isEmpty() || userUpdateDTO.getZipCode().isEmpty()){
+            if(userUpdateDTO.getEmail().isEmpty() || userUpdateDTO.getCity().isEmpty() || userUpdateDTO.getState().isEmpty() || userUpdateDTO.getZipCode().isEmpty()){
                 response.setMessage("The values cannot be empty");
                 return new ResponseEntity<>(response, HttpStatus.NO_CONTENT);
-            } else if (userUpdateDTO.getName() == null || userUpdateDTO.getEmail() == null) {
+            } else if (userUpdateDTO.getEmail() == null) {
                 response.setMessage("The values cannot be NULL");
                 return new ResponseEntity<>(response, HttpStatus.CONFLICT);
             }
