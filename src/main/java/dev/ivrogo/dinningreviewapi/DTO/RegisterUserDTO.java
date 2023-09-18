@@ -14,6 +14,7 @@ public class RegisterUserDTO {
     private String name;
     private String city;
     private String state;
+    private String email;
     private String zipCode;
     private boolean peanutAllergies;
     private boolean eggAllergies;

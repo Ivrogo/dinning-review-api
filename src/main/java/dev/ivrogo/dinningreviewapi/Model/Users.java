@@ -15,20 +15,22 @@ public class Users {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column(unique = true, name = "NAME")
     private String name;
     @Column(name = "CITY")
     private String city;
     @Column(name = "STATE")
     private String state;
+    @Column(unique = true, name = "EMAIL")
+    private String email;
     @Column(name = "ZIPCODE")
     private String zipCode;
     @Column(name = "PEANUT_ALLERGIES")
-    private boolean peanutAllergies;
+    private Boolean peanutAllergies;
     @Column(name = "EGG_ALLERGIES")
-    private boolean eggAllergies;
+    private Boolean eggAllergies;
     @Column(name = "DAIRY_ALLERGIES")
-    private boolean dairyAllergies;
+    private Boolean dairyAllergies;
 
 }
